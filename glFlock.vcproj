@@ -61,7 +61,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="sdl.lib SDLmain.lib opengl32.lib glu32.lib glut32.lib sdl_image.lib fmodvc.lib glew32.lib lib3ds-120.lib SDL_net.lib lua51.lib libxml2.lib SDL_mixer.lib cv200d.lib cvaux200d.lib highgui200d.lib cxcore200d.lib"
+				AdditionalDependencies="sdl.lib SDLmain.lib opengl32.lib glu32.lib glut32.lib sdl_image.lib fmodvc.lib glew32.lib lib3ds-120.lib libxml2.lib SDL_mixer.lib"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="&quot;$(ProjectDir)GLUT&quot;;&quot;$(ProjectDir)SDL\SDL_lib&quot;;&quot;$(ProjectDir)iconv-1.9.2.win32\lib&quot;;&quot;$(ProjectDir)zlib-1.2.3.win32\lib&quot;;&quot;$(ProjectDir)libxml2-2.7.2.win32\lib&quot;;&quot;$(ProjectDir)OpenCV2\lib\$(ConfigurationName)&quot;"
 				IgnoreAllDefaultLibraries="false"
