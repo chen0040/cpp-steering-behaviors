@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<root feedback="true" />
+<create agent_id="1" model="WalkMech.md2" locomotion_type="LANDCRAFT_ROBOT" hovering_height="0" r="255" g="255" b="255" x="0" y="0" z="0" mass="1" max_force="2.0" max_speed="5.0" enable_sound="false" bounding_radius="1.8" max_fps="50" />
+<move agent_id="1" v_x="2" v_y="0" v_z="2" delta_time="10" />
+<destroy agent_id="1" body_stay_period="1" /> 
+<speak gender="MALE" text="" voice_pitch="1" pitch="50" amplitude="100" />
+</root>
+
+<!--
+in "create" element, the model attribute specified the 3D model file used for the agent,  the locomotion_type specified that the agent is a robot based on land travelling, the locomotion_type current support three value LANDCRAFT_ROBOT, STATIC_OBJ and AIRCRAFT, hovering_height is a  distance of the agent to the ground, this value can be set non-zero to simulate a hovering land robot
+in "move" element, the position of the agent is removed as this information is not needed by the server
+in "destroy" element, when body_state_period is set to -1, the corpsed will not be removed by the server, otherwise it will stay a number of seconds specified by the value of the attribute
+-->
+
+<!--
+in the speak element
+gender can be either "MALE" or "FEMALE" [required]
+voice_pitch is 1-6 for "MALE" and 1-4 for "FEMALE"  [default is 1]  [optional]
+pitch is 0-99 [default is 50] [optional]
+amplitude is 0-200 [default is 100] [optional]
+-->

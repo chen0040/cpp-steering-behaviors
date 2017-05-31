@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<skybox use="default" >
+
+<set name="default">
+<top src="Skybox_Tex\default\nightsky_UP.JPG" />
+<bottom src="Skybox_Tex\default\nightsky_DN.JPG" />
+<left src="Skybox_Tex\default\nightsky_LF.JPG" />
+<right src="Skybox_Tex\default\nightsky_RT.JPG" />
+<front src="Skybox_Tex\default\nightsky_FR.JPG" />
+<back src="Skybox_Tex\default\nightsky_BK.JPG" />
+</set>
+
+<set name="tao_sky">
+<top src="Skybox_Tex\Skybox_TaoSky\skybox1_top.jpg" />
+<bottom src="Skybox_Tex\Skybox_TaoSky\skybox1_bottom.jpg" />
+<left src="Skybox_Tex\Skybox_TaoSky\skybox1_left.jpg" />
+<right src="Skybox_Tex\Skybox_TaoSky\skybox1_right.jpg" />
+<front src="Skybox_Tex\Skybox_TaoSky\skybox1_front.jpg" />
+<back src="Skybox_Tex\Skybox_TaoSky\skybox1_back.jpg" />
+</set>
+
+<set name="FreeRWX">
+<top src="Skybox_Tex\FreeRWX\lnhday_up.jpg" />
+<bottom src="Skybox_Tex\FreeRWX\lnhday_dn.jpg" />
+<left src="Skybox_Tex\FreeRWX\lnhday_lt.jpg" />
+<right src="Skybox_Tex\FreeRWX\lnhday_rt.jpg" />
+<front src="Skybox_Tex\FreeRWX\lnhday_fr.jpg" />
+<back src="Skybox_Tex\FreeRWX\lnhday_bk.jpg" />
+</set>
+
+</skybox>

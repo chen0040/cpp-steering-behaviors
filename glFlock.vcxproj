@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2D7083D2-8CDD-41B5-B1C6-CE0B6FF9BD6B}</ProjectGuid>
+    <RootNamespace>glFlock</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.26419.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)lib3ds-1.2.0;$(ProjectDir)GLUT;$(ProjectDir)SDL\SDL_include;$(ProjectDir)iconv-1.9.2.win32\include;$(ProjectDir)zlib-1.2.3.win32\include;$(ProjectDir)libxml2-2.7.2.win32\include;$(ProjectDir)OpenCV2\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>sdl.lib;SDLmain.lib;opengl32.lib;glu32.lib;glut32.lib;sdl_image.lib;fmodvc.lib;glew32.lib;lib3ds-120.lib;SDL_net.lib;lua51.lib;libxml2.lib;SDL_mixer.lib;cv200d.lib;cvaux200d.lib;highgui200d.lib;cxcore200d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)GLUT;$(ProjectDir)SDL\SDL_lib;$(ProjectDir)iconv-1.9.2.win32\lib;$(ProjectDir)zlib-1.2.3.win32\lib;$(ProjectDir)libxml2-2.7.2.win32\lib;$(ProjectDir)OpenCV2\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)lib3ds-1.2.0;$(ProjectDir)GLUT;$(ProjectDir)SDL\SDL_include;$(ProjectDir)zlib-1.2.3.win32\include;$(ProjectDir)libxml2-2.7.2.win32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>sdl.lib;SDLmain.lib;sdl_image.lib;opengl32.lib;glu32.lib;glut32.lib;glew32.lib;lib3ds-120.lib;SDL_net.lib;libxml2.lib;SDL_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)GLUT;$(ProjectDir)SDL\SDL_lib;$(ProjectDir)zlib-1.2.3.win32\lib;$(ProjectDir)libxml2-2.7.2.win32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="3DSLoader\GLModel_3DS.cpp" />
+    <ClCompile Include="3DSLoader\Model_3DS.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_CameraReset.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_ClearCurve.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_DemoAStar.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_DemoAvoidance.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_DemoAvoidSeek.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_DemoBezier.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_DemoBSpline.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_DemoCatmullRom.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_DemoEvade.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_DemoFlee.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_DemoFlock.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_DemoInterpose.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_DemoPathFollow.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_DemoPSO.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_DemoPursuit.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_DemoSeek.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_DemoWander.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_GameFlow.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_GameMenu.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_ScalePlane.cpp" />
+    <ClCompile Include="EventHandler\EventHandler_ZoomOut.cpp" />
+    <ClCompile Include="GameEngine\GameEngine.cpp" />
+    <ClCompile Include="GameEntity\ConstrainedAgent.cpp" />
+    <ClCompile Include="GameEntity\Corpse.cpp" />
+    <ClCompile Include="GameEntity\GameEntity.cpp" />
+    <ClCompile Include="GameEntity\GLPlant.cpp" />
+    <ClCompile Include="GameEntity\GLRadar.cpp" />
+    <ClCompile Include="GameEntity\GLTower.cpp" />
+    <ClCompile Include="GameEntity\MovingEntity.cpp" />
+    <ClCompile Include="GameEntity\Obstacle.cpp" />
+    <ClCompile Include="GameEntity\PSOAgent.cpp" />
+    <ClCompile Include="GameEntity\Vehicle.cpp" />
+    <ClCompile Include="GameWorld\GameWorld.cpp" />
+    <ClCompile Include="GLAnimation\GLAnimator.cpp" />
+    <ClCompile Include="GLCamera\GLCamera.cpp" />
+    <ClCompile Include="GLCamera\GLSphericalCamera.cpp" />
+    <ClCompile Include="GLConsole\GLConsole.cpp" />
+    <ClCompile Include="GLExtension\glxs.cpp" />
+    <ClCompile Include="GLFloor\GLFloor.cpp" />
+    <ClCompile Include="GLFont\GLFontSys.cpp" />
+    <ClCompile Include="GLInput\GLKeyboard.cpp" />
+    <ClCompile Include="GLInput\GLMouse.cpp" />
+    <ClCompile Include="GLLights\GLLight.cpp" />
+    <ClCompile Include="GLLights\GLLightSystem.cpp" />
+    <ClCompile Include="GLLights\GLLight_Directional.cpp" />
+    <ClCompile Include="GLLights\GLLight_Positional.cpp" />
+    <ClCompile Include="GLLocomotion\GLLocomotion.cpp" />
+    <ClCompile Include="GLLocomotion\GLLocomotion_Aircraft.cpp" />
+    <ClCompile Include="GLLocomotion\GLLocomotion_Landcraft.cpp" />
+    <ClCompile Include="GLMath\GLMath.cpp" />
+    <ClCompile Include="GLModel\GLModel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="GLModel\GLModelManager.cpp" />
+    <ClCompile Include="GLObject\GLObject.cpp" />
+    <ClCompile Include="GLParticle\GLBroadcaster.cpp" />
+    <ClCompile Include="GLParticle\GLBurstWave.cpp" />
+    <ClCompile Include="GLParticle\GLDebris.cpp" />
+    <ClCompile Include="GLParticle\GLEmitter.cpp" />
+    <ClCompile Include="GLParticle\GLPacket.cpp" />
+    <ClCompile Include="GLParticle\GLParticle.cpp" />
+    <ClCompile Include="GLParticle\GLParticleSteering.cpp" />
+    <ClCompile Include="GLParticle\GLParticleSteering_Gravity.cpp" />
+    <ClCompile Include="GLParticle\GLParticleSteering_Viberate.cpp" />
+    <ClCompile Include="GLParticle\GLParticleSystem.cpp" />
+    <ClCompile Include="GLParticle\GLProjectile.cpp" />
+    <ClCompile Include="GLQuadTree\GLQuadTree.cpp" />
+    <ClCompile Include="GLQuadTree\GLQuadTree_Node.cpp" />
+    <ClCompile Include="GLRay\GLRay.cpp" />
+    <ClCompile Include="GLRole\GLRole.cpp" />
+    <ClCompile Include="GLRole\GLRole_Predator.cpp" />
+    <ClCompile Include="GLRole\GLRole_Prey.cpp" />
+    <ClCompile Include="GLRole\GLRole_Unknown.cpp" />
+    <ClCompile Include="GLShape\GLBezier.cpp" />
+    <ClCompile Include="GLShape\GLBSpline.cpp" />
+    <ClCompile Include="GLShape\GLCatmullRom.cpp" />
+    <ClCompile Include="GLShape\GLCube.cpp" />
+    <ClCompile Include="GLShape\GLCurve.cpp" />
+    <ClCompile Include="GLShape\GLFrustum.cpp" />
+    <ClCompile Include="GLShape\GLLineSegment.cpp" />
+    <ClCompile Include="GLShape\GLPlane.cpp" />
+    <ClCompile Include="GLShape\GLRect.cpp" />
+    <ClCompile Include="GLShape\GLSphere.cpp" />
+    <ClCompile Include="GLSkybox\GLSkybox.cpp" />
+    <ClCompile Include="GLStates\GLState.cpp" />
+    <ClCompile Include="GLStates\GLState_AStar.cpp" />
+    <ClCompile Include="GLStates\GLState_Avoidance.cpp" />
+    <ClCompile Include="GLStates\GLState_AvoidSeek.cpp" />
+    <ClCompile Include="GLStates\GLState_Bezier.cpp" />
+    <ClCompile Include="GLStates\GLState_Blank.cpp" />
+    <ClCompile Include="GLStates\GLState_BSpline.cpp" />
+    <ClCompile Include="GLStates\GLState_CatmullRom.cpp" />
+    <ClCompile Include="GLStates\GLState_Evade.cpp" />
+    <ClCompile Include="GLStates\GLState_Flee.cpp" />
+    <ClCompile Include="GLStates\GLState_Flock.cpp" />
+    <ClCompile Include="GLStates\GLState_GameMenu.cpp" />
+    <ClCompile Include="GLStates\GLState_Interpose.cpp" />
+    <ClCompile Include="GLStates\GLState_Load.cpp" />
+    <ClCompile Include="GLStates\GLState_PathFollow.cpp" />
+    <ClCompile Include="GLStates\GLState_PSO.cpp" />
+    <ClCompile Include="GLStates\GLState_Pursuit.cpp" />
+    <ClCompile Include="GLStates\GLState_Seek.cpp" />
+    <ClCompile Include="GLStates\GLState_Wander.cpp" />
+    <ClCompile Include="GLSteering\GLPath.cpp" />
+    <ClCompile Include="GLSteering\GLSteering.cpp" />
+    <ClCompile Include="GLSteering\GLSteering_Alignment.cpp" />
+    <ClCompile Include="GLSteering\GLSteering_Avoidance.cpp" />
+    <ClCompile Include="GLSteering\GLSteering_Cohesion.cpp" />
+    <ClCompile Include="GLSteering\GLSteering_Composite.cpp" />
+    <ClCompile Include="GLSteering\GLSteering_Evade.cpp" />
+    <ClCompile Include="GLSteering\GLSteering_Flee.cpp" />
+    <ClCompile Include="GLSteering\GLSteering_Interpose.cpp" />
+    <ClCompile Include="GLSteering\GLSteering_OffsetPursuit.cpp" />
+    <ClCompile Include="GLSteering\GLSteering_PathFollow.cpp" />
+    <ClCompile Include="GLSteering\GLSteering_Pursuit.cpp" />
+    <ClCompile Include="GLSteering\GLSteering_Seek.cpp" />
+    <ClCompile Include="GLSteering\GLSteering_Separation.cpp" />
+    <ClCompile Include="GLSteering\GLSteering_WallAvoidance.cpp" />
+    <ClCompile Include="GLSteering\GLSteering_Wander.cpp" />
+    <ClCompile Include="GLSystem\GLSystem.cpp" />
+    <ClCompile Include="GLTerrain\GLTerrain.cpp" />
+    <ClCompile Include="GLTerrain\GLTerrainPatch.cpp" />
+    <ClCompile Include="GLTestFunc\GLTestFunc.cpp" />
+    <ClCompile Include="GLTestFunc\GLTestFunc_Banana.cpp" />
+    <ClCompile Include="GLTestFunc\GLTestFunc_InverseMexicanHat.cpp" />
+    <ClCompile Include="GLTestFunc\GLTestFunc_PotentialField.cpp" />
+    <ClCompile Include="GLTexture\GLTexture.cpp" />
+    <ClCompile Include="GLTexture\GLTextureManager.cpp" />
+    <ClCompile Include="GLTransformation\GLRotation.cpp" />
+    <ClCompile Include="GLTransformation\GLScaling.cpp" />
+    <ClCompile Include="GLTransformation\GLTransformation.cpp" />
+    <ClCompile Include="GLTransformation\GLTranslation.cpp" />
+    <ClCompile Include="GLUI\GLActionListener.cpp" />
+    <ClCompile Include="GLUI\GLBorderLayout.cpp" />
+    <ClCompile Include="GLUI\GLCommand.cpp" />
+    <ClCompile Include="GLUI\GLCommandPanel.cpp" />
+    <ClCompile Include="GLUI\GLFlowLayout.cpp" />
+    <ClCompile Include="GLUI\GLGridLayout.cpp" />
+    <ClCompile Include="GLUI\GLLayout.cpp" />
+    <ClCompile Include="GLUI\GLMiniMap.cpp" />
+    <ClCompile Include="GLUI\GLToggleCommand.cpp" />
+    <ClCompile Include="GLUI\GLUIObj.cpp" />
+    <ClCompile Include="GLUtil\GLExitSystem.cpp" />
+    <ClCompile Include="GLVector\GLVector.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MD2Loader\GLModel_MD2.cpp" />
+    <ClCompile Include="MD2Loader\MD2Loader.cpp" />
+    <ClCompile Include="tinyxml\tinystr.cpp" />
+    <ClCompile Include="tinyxml\tinyxml.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3DSLoader\GLModel_3DS.h" />
+    <ClInclude Include="3DSLoader\Model_3DS.h" />
+    <ClInclude Include="EventHandler\EventHandler_CameraReset.h" />
+    <ClInclude Include="EventHandler\EventHandler_ClearCurve.h" />
+    <ClInclude Include="EventHandler\EventHandler_DemoAStar.h" />
+    <ClInclude Include="EventHandler\EventHandler_DemoAvoidance.h" />
+    <ClInclude Include="EventHandler\EventHandler_DemoAvoidSeek.h" />
+    <ClInclude Include="EventHandler\EventHandler_DemoBezier.h" />
+    <ClInclude Include="EventHandler\EventHandler_DemoBSpline.h" />
+    <ClInclude Include="EventHandler\EventHandler_DemoCatmullRom.h" />
+    <ClInclude Include="EventHandler\EventHandler_DemoEvade.h" />
+    <ClInclude Include="EventHandler\EventHandler_DemoFlee.h" />
+    <ClInclude Include="EventHandler\EventHandler_DemoFlock.h" />
+    <ClInclude Include="EventHandler\EventHandler_DemoInterpose.h" />
+    <ClInclude Include="EventHandler\EventHandler_DemoPathFollow.h" />
+    <ClInclude Include="EventHandler\EventHandler_DemoPSO.h" />
+    <ClInclude Include="EventHandler\EventHandler_DemoPursuit.h" />
+    <ClInclude Include="EventHandler\EventHandler_DemoSeek.h" />
+    <ClInclude Include="EventHandler\EventHandler_DemoWander.h" />
+    <ClInclude Include="EventHandler\EventHandler_GameFlow.h" />
+    <ClInclude Include="EventHandler\EventHandler_GameMenu.h" />
+    <ClInclude Include="EventHandler\EventHandler_ScalePlane.h" />
+    <ClInclude Include="EventHandler\EventHandler_ZoomOut.h" />
+    <ClInclude Include="GameEngine\GameEngine.h" />
+    <ClInclude Include="GameEntity\ConstrainedAgent.h" />
+    <ClInclude Include="GameEntity\Corpse.h" />
+    <ClInclude Include="GameEntity\GameEntity.h" />
+    <ClInclude Include="GameEntity\GLPlant.h" />
+    <ClInclude Include="GameEntity\GLRadar.h" />
+    <ClInclude Include="GameEntity\GLTower.h" />
+    <ClInclude Include="GameEntity\MovingEntity.h" />
+    <ClInclude Include="GameEntity\Obstacle.h" />
+    <ClInclude Include="GameEntity\PSOAgent.h" />
+    <ClInclude Include="GameEntity\Vehicle.h" />
+    <ClInclude Include="GameWorld\GameWorld.h" />
+    <ClInclude Include="GLAnimation\GLAnimator.h" />
+    <ClInclude Include="GLCamera\GLCamera.h" />
+    <ClInclude Include="GLCamera\GLSphericalCamera.h" />
+    <ClInclude Include="GLConfig\xsconfig.h" />
+    <ClInclude Include="GLConsole\GLConsole.h" />
+    <ClInclude Include="GLExtension\glew.h" />
+    <ClInclude Include="GLExtension\glxs.h" />
+    <ClInclude Include="GLExtension\wglew.h" />
+    <ClInclude Include="GLFloor\GLFloor.h" />
+    <ClInclude Include="GLFont\GLFontSys.h" />
+    <ClInclude Include="GLInput\GLKeyboard.h" />
+    <ClInclude Include="GLInput\GLMouse.h" />
+    <ClInclude Include="GLLights\GLLight.h" />
+    <ClInclude Include="GLLights\GLLightSystem.h" />
+    <ClInclude Include="GLLights\GLLight_Directional.h" />
+    <ClInclude Include="GLLights\GLLight_Positional.h" />
+    <ClInclude Include="GLLocomotion\GLLocomotion.h" />
+    <ClInclude Include="GLLocomotion\GLLocomotion_Aircraft.h" />
+    <ClInclude Include="GLLocomotion\GLLocomotion_Landcraft.h" />
+    <ClInclude Include="GLMath\GLMath.h" />
+    <ClInclude Include="GLModel\GLModel.h" />
+    <ClInclude Include="GLModel\GLModelManager.h" />
+    <ClInclude Include="GLObject\GLObject.h" />
+    <ClInclude Include="GLParticle\GLBroadcaster.h" />
+    <ClInclude Include="GLParticle\GLBurstWave.h" />
+    <ClInclude Include="GLParticle\GLDebris.h" />
+    <ClInclude Include="GLParticle\GLEmitter.h" />
+    <ClInclude Include="GLParticle\GLPacket.h" />
+    <ClInclude Include="GLParticle\GLParticle.h" />
+    <ClInclude Include="GLParticle\GLParticleSteering.h" />
+    <ClInclude Include="GLParticle\GLParticleSteering_Gravity.h" />
+    <ClInclude Include="GLParticle\GLParticleSteering_Viberate.h" />
+    <ClInclude Include="GLParticle\GLParticleSystem.h" />
+    <ClInclude Include="GLParticle\GLProjectile.h" />
+    <ClInclude Include="GLQuadTree\GLQuadTree.h" />
+    <ClInclude Include="GLQuadTree\GLQuadTree_Node.h" />
+    <ClInclude Include="GLRay\GLRay.h" />
+    <ClInclude Include="GLRole\GLRole.h" />
+    <ClInclude Include="GLRole\GLRole_Predator.h" />
+    <ClInclude Include="GLRole\GLRole_Prey.h" />
+    <ClInclude Include="GLRole\GLRole_Unknown.h" />
+    <ClInclude Include="GLShape\GLBezier.h" />
+    <ClInclude Include="GLShape\GLBSpline.h" />
+    <ClInclude Include="GLShape\GLCatmullRom.h" />
+    <ClInclude Include="GLShape\GLCube.h" />
+    <ClInclude Include="GLShape\GLCurve.h" />
+    <ClInclude Include="GLShape\GLFrustum.h" />
+    <ClInclude Include="GLShape\GLLineSegment.h" />
+    <ClInclude Include="GLShape\GLPlane.h" />
+    <ClInclude Include="GLShape\GLRect.h" />
+    <ClInclude Include="GLShape\GLSphere.h" />
+    <ClInclude Include="GLSkybox\GLSkybox.h" />
+    <ClInclude Include="GLStates\GLState.h" />
+    <ClInclude Include="GLStates\GLState_AStar.h" />
+    <ClInclude Include="GLStates\GLState_Avoidance.h" />
+    <ClInclude Include="GLStates\GLState_AvoidSeek.h" />
+    <ClInclude Include="GLStates\GLState_Bezier.h" />
+    <ClInclude Include="GLStates\GLState_Blank.h" />
+    <ClInclude Include="GLStates\GLState_BSpline.h" />
+    <ClInclude Include="GLStates\GLState_CatmullRom.h" />
+    <ClInclude Include="GLStates\GLState_Evade.h" />
+    <ClInclude Include="GLStates\GLState_Flee.h" />
+    <ClInclude Include="GLStates\GLState_Flock.h" />
+    <ClInclude Include="GLStates\GLState_GameMenu.h" />
+    <ClInclude Include="GLStates\GLState_Interpose.h" />
+    <ClInclude Include="GLStates\GLState_Load.h" />
+    <ClInclude Include="GLStates\GLState_PathFollow.h" />
+    <ClInclude Include="GLStates\GLState_PSO.h" />
+    <ClInclude Include="GLStates\GLState_Pursuit.h" />
+    <ClInclude Include="GLStates\GLState_Seek.h" />
+    <ClInclude Include="GLStates\GLState_Wander.h" />
+    <ClInclude Include="GLSteering\GLPath.h" />
+    <ClInclude Include="GLSteering\GLSteering.h" />
+    <ClInclude Include="GLSteering\GLSteering_Alignment.h" />
+    <ClInclude Include="GLSteering\GLSteering_Avoidance.h" />
+    <ClInclude Include="GLSteering\GLSteering_Cohesion.h" />
+    <ClInclude Include="GLSteering\GLSteering_Composite.h" />
+    <ClInclude Include="GLSteering\GLSteering_Evade.h" />
+    <ClInclude Include="GLSteering\GLSteering_Flee.h" />
+    <ClInclude Include="GLSteering\GLSteering_Interpose.h" />
+    <ClInclude Include="GLSteering\GLSteering_OffsetPursuit.h" />
+    <ClInclude Include="GLSteering\GLSteering_PathFollow.h" />
+    <ClInclude Include="GLSteering\GLSteering_Pursuit.h" />
+    <ClInclude Include="GLSteering\GLSteering_Seek.h" />
+    <ClInclude Include="GLSteering\GLSteering_Separation.h" />
+    <ClInclude Include="GLSteering\GLSteering_WallAvoidance.h" />
+    <ClInclude Include="GLSteering\GLSteering_Wander.h" />
+    <ClInclude Include="GLSystem\GLSystem.h" />
+    <ClInclude Include="GLTerrain\GLTerrain.h" />
+    <ClInclude Include="GLTerrain\GLTerrainPatch.h" />
+    <ClInclude Include="GLTestFunc\GLTestFunc.h" />
+    <ClInclude Include="GLTestFunc\GLTestFunc_Banana.h" />
+    <ClInclude Include="GLTestFunc\GLTestFunc_InverseMexicanHat.h" />
+    <ClInclude Include="GLTestFunc\GLTestFunc_PotentialField.h" />
+    <ClInclude Include="GLTexture\GLTexture.h" />
+    <ClInclude Include="GLTexture\GLTextureManager.h" />
+    <ClInclude Include="GLTransformation\GLRotation.h" />
+    <ClInclude Include="GLTransformation\GLScaling.h" />
+    <ClInclude Include="GLTransformation\GLTransformation.h" />
+    <ClInclude Include="GLTransformation\GLTranslation.h" />
+    <ClInclude Include="GLUI\GLActionListener.h" />
+    <ClInclude Include="GLUI\GLBorderLayout.h" />
+    <ClInclude Include="GLUI\GLCommand.h" />
+    <ClInclude Include="GLUI\GLCommandPanel.h" />
+    <ClInclude Include="GLUI\GLFlowLayout.h" />
+    <ClInclude Include="GLUI\GLGridLayout.h" />
+    <ClInclude Include="GLUI\GLLayout.h" />
+    <ClInclude Include="GLUI\GLMiniMap.h" />
+    <ClInclude Include="GLUI\GLToggleCommand.h" />
+    <ClInclude Include="GLUI\GLUIObj.h" />
+    <ClInclude Include="GLUtil\GLExitSystem.h" />
+    <ClInclude Include="GLVector\GLVector.h" />
+    <ClInclude Include="MD2Loader\GLModel_MD2.h" />
+    <ClInclude Include="MD2Loader\MD2Loader.h" />
+    <ClInclude Include="tinyxml\tinystr.h" />
+    <ClInclude Include="tinyxml\tinyxml.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

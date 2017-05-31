@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<lua>
+
+<cpp_function>
+<function cpp_name="lua_println" lua_name="DrawString" />
+<function cpp_name="lua_AddPage" lua_name="AddPage" />
+<function cpp_name="lua_AddButton" lua_name="AddButton" />
+<function cpp_name="lua_ChangeState" lua_name="ChangeState" />
+
+<function cpp_name="lua_RemoveAgents" lua_name="RemoveAgents" />
+<function cpp_name="lua_RemoveObstacles" lua_name="RemoveObstacles" />
+<function cpp_name="lua_UpdateAgents" lua_name="UpdateAgents" />
+<function cpp_name="lua_CreateAgent" lua_name="CreateAgent" />
+<function cpp_name="lua_SetAgentMaxForce" lua_name="SetAgentMaxForce" />
+<function cpp_name="lua_SetAgentMass" lua_name="SetAgentMass" />
+<function cpp_name="lua_SetAgentMaxSpeed" lua_name="SetAgentMaxSpeed" />
+<function cpp_name="lua_SetAgentVisibleDistance" lua_name="SetAgentVisibleDistance" />
+<function cpp_name="lua_EnableAgentSound" lua_name="EnableAgentSound" />
+<function cpp_name="lua_SetAgentPosition" lua_name="SetAgentPosition" />
+<function cpp_name="lua_SetAgentVelocity" lua_name="SetAgentVelocity" />
+<function cpp_name="lua_SetAgentFPS" lua_name="SetAgentFPS" />
+<function cpp_name="lua_SetAgentWorldWrap" lua_name="SetAgentWorldWrap" />
+<function cpp_name="lua_SetAgentColor" lua_name="SetAgentColor" />
+<function cpp_name="lua_SetAgentHoverHeight" lua_name="SetAgentHoverHeight" />
+<function cpp_name="lua_SetAgentLocomotionType" lua_name="SetAgentLocomotionType" />
+
+<function cpp_name="lua_GetGameWidth" lua_name="GetGameWidth" />
+<function cpp_name="lua_GetGameHeight" lua_name="GetGameHeight" />
+<function cpp_name="lua_GetGameEnvWidth" lua_name="GetGameEnvWidth" />
+<function cpp_name="lua_GetGameEnvLength" lua_name="GetGameEnvLength" />
+<function cpp_name="lua_GetGameEnvHeight" lua_name="GetGameEnvHeight" />
+<function cpp_name="lua_DisplayTerrain" lua_name="DisplayTerrain" />
+<function cpp_name="lua_GetFloorIntersection" lua_name="GetFloorIntersection" />
+<function cpp_name="lua_GetAgentHoverHeight" lua_name="GetAgentHoverHeight" />
+<function cpp_name="lua_GetAgentLocomotionType" lua_name="GetAgentLocomotionType" />
+
+<function cpp_name="lua_GetAgentMaxForce" lua_name="GetAgentMaxForce" />
+<function cpp_name="lua_GetAgentMass" lua_name="GetAgentMass" />
+<function cpp_name="lua_GetAgentMaxSpeed" lua_name="GetAgentMaxSpeed" />
+<function cpp_name="lua_GetAgentVisibleDistance" lua_name="GetAgentVisibleDistance" />
+<function cpp_name="lua_GetAgentPosition" lua_name="GetAgentPosition" />
+<function cpp_name="lua_GetAgentVelocity" lua_name="GetAgentVelocity" />
+<function cpp_name="lua_GetAgentFPS" lua_name="GetAgentFPS" />
+<function cpp_name="lua_GetAgentColor" lua_name="GetAgentColor" />
+
+<function cpp_name="lua_DrawSphere" lua_name="DrawSphere" />
+<function cpp_name="lua_DrawLine" lua_name="DrawLine" />
+<function cpp_name="lua_DrawLines" lua_name="DrawLines" />
+
+<function cpp_name="lua_MessageBox" lua_name="MessageBox" />
+
+<function cpp_name="lua_KillAgent" lua_name="KillAgent" />
+<function cpp_name="lua_IsAgentAlive" lua_name="IsAgentAlive" />
+<function cpp_name="lua_IsKeyDown" lua_name="IsKeyDown" />
+
+<function cpp_name="lua_LoadLuaFile" lua_name="LoadLuaFile" />
+<function cpp_name="lua_FileExists" lua_name="FileExists" />
+<function cpp_name="lua_PlaySound" lua_name="PlaySound" />
+
+<function cpp_name="lua_CreatePlant" lua_name="CreatePlant" />
+<function cpp_name="lua_CreateStaticObject" lua_name="CreateStaticObject" />
+<function cpp_name="lua_UpdateAgent" lua_name="UpdateAgent" />
+
+<function cpp_name="lua_SetAgentTypeId" lua_name="SetAgentTypeId" />
+<function cpp_name="lua_GetAgentTypeId" lua_name="GetAgentTypeId" />
+
+<function cpp_name="lua_Activate_AgentSteering" lua_name="ActivateAgentSteering" />
+<function cpp_name="lua_Activate_AgentSteering" lua_name="DeactivateAgentSteering" />
+
+<function cpp_name="lua_AddAgentSteering_Wander" lua_name="AddAgentSteering_Wander" />
+<function cpp_name="lua_AddAgentSteering_Seek" lua_name="AddAgentSteering_Seek" />
+
+<function cpp_name="lua_SetAgentSeekTarget" lua_name="SetAgentSeekTarget" />
+
+<function cpp_name="lua_IsAgentSelectedByCursor" lua_name="IsAgentSelectedByCursor" />
+<function cpp_name="lua_ShowAgentField" lua_name="ShowAgentField" />
+<function cpp_name="lua_MoniterAgentByCamera" lua_name="MoniterAgentByCamera" />
+
+<function cpp_name="lua_Whisper" lua_name="Whisper" />
+<function cpp_name="lua_Croak" lua_name="Croak" />
+<function cpp_name="lua_Speak" lua_name="Speak" />
+
+<function cpp_name="lua_ServerState_SetName" lua_name="ServerState_SetName" />
+<function cpp_name="lua_ServerState_Render" lua_name="ServerState_Render" />
+<function cpp_name="lua_ServerState_Update" lua_name="ServerState_Update" />
+<function cpp_name="lua_ServerState_Entered" lua_name="ServerState_Entered" />
+<function cpp_name="lua_ServerState_Exited" lua_name="ServerState_Exited" />
+<function cpp_name="lua_ServerState_KeyDown" lua_name="ServerState_KeyDown" />
+<function cpp_name="lua_ServerState_MouseButtonDown" lua_name="ServerState_MouseButtonDown" />
+<function cpp_name="lua_ServerState_Send" lua_name="ServerState_Send" />
+
+</cpp_function>
+
+</lua>

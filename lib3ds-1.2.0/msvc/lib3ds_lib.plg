@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: lib3ds_lib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Xianshun\LOCALS~1\Temp\RSP3EE.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I ".." /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fo"Build\Release\lib/" /Fd"Build\Release\lib/" /FD /c 
+"C:\lib3ds-1.2.0\lib3ds\atmosphere.c"
+"C:\lib3ds-1.2.0\lib3ds\background.c"
+"C:\lib3ds-1.2.0\lib3ds\camera.c"
+"C:\lib3ds-1.2.0\lib3ds\chunk.c"
+"C:\lib3ds-1.2.0\lib3ds\ease.c"
+"C:\lib3ds-1.2.0\lib3ds\file.c"
+"C:\lib3ds-1.2.0\lib3ds\float.c"
+"C:\lib3ds-1.2.0\lib3ds\io.c"
+"C:\lib3ds-1.2.0\lib3ds\light.c"
+"C:\lib3ds-1.2.0\lib3ds\material.c"
+"C:\lib3ds-1.2.0\lib3ds\matrix.c"
+"C:\lib3ds-1.2.0\lib3ds\mesh.c"
+"C:\lib3ds-1.2.0\lib3ds\node.c"
+"C:\lib3ds-1.2.0\lib3ds\quat.c"
+"C:\lib3ds-1.2.0\lib3ds\shadow.c"
+"C:\lib3ds-1.2.0\lib3ds\tcb.c"
+"C:\lib3ds-1.2.0\lib3ds\tracks.c"
+"C:\lib3ds-1.2.0\lib3ds\vector.c"
+"C:\lib3ds-1.2.0\lib3ds\viewport.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Xianshun\LOCALS~1\Temp\RSP3EE.tmp" 
+Creating temporary file "C:\DOCUME~1\Xianshun\LOCALS~1\Temp\RSP3EF.tmp" with contents
+[
+/nologo /out:"Build\Release\lib3ds-120s.lib" 
+".\Build\Release\lib\atmosphere.obj"
+".\Build\Release\lib\background.obj"
+".\Build\Release\lib\camera.obj"
+".\Build\Release\lib\chunk.obj"
+".\Build\Release\lib\ease.obj"
+".\Build\Release\lib\file.obj"
+".\Build\Release\lib\float.obj"
+".\Build\Release\lib\io.obj"
+".\Build\Release\lib\light.obj"
+".\Build\Release\lib\material.obj"
+".\Build\Release\lib\matrix.obj"
+".\Build\Release\lib\mesh.obj"
+".\Build\Release\lib\node.obj"
+".\Build\Release\lib\quat.obj"
+".\Build\Release\lib\shadow.obj"
+".\Build\Release\lib\tcb.obj"
+".\Build\Release\lib\tracks.obj"
+".\Build\Release\lib\vector.obj"
+".\Build\Release\lib\viewport.obj"
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Xianshun\LOCALS~1\Temp\RSP3EF.tmp"
+<h3>Output Window</h3>
+Compiling...
+atmosphere.c
+background.c
+camera.c
+chunk.c
+ease.c
+file.c
+float.c
+io.c
+light.c
+material.c
+matrix.c
+mesh.c
+node.c
+quat.c
+shadow.c
+tcb.c
+tracks.c
+vector.c
+viewport.c
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+lib3ds-120s.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

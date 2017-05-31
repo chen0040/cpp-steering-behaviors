@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<model>
+<transformations>
+<scale x="0.1" y="0.1" z="0.1" />
+<rotation angle_in_degree="-90" x="1" y="0" z="0" />
+</transformations>
+<sounds>
+<sound name="default" src="audio/click.wav" frequency="2" />
+</sounds>
+</model>

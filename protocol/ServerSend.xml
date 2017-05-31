@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<root>
+<agent_status agent_id="1" p_x="1" p_y="2" p_z="1" />
+<current_state name="State_Server" />
+</root>

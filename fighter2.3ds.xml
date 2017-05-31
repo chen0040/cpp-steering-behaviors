@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<model>
+<transformations>
+<scale x="0.5" y="0.5" z="0.5" />
+<!--<rotation angle_in_degree="90" x="1" y="0" z="0" />-->
+<rotation angle_in_degree="180" x="0" y="1" z="0" />
+</transformations>
+
+<texture src="skull.bmp" enabled="true" alpha_blend="false" />
+
+<height_to_width_ratio value="0.2" />
+
+</model>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<glState>
+
+<parameters>
+<!--<param name="Tower_Model" value="" /> -->
+<param name="Tower_Model" high_end_value="tower.3ds" low_end_value="tower.3ds" /> 
+<param name="iObsCount" high_end_value="9" low_end_value="3" />
+<param name="iPreyCount" high_end_value="9" low_end_value="6" />
+</parameters>
+
+</glState>

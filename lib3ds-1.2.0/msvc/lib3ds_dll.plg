@@ -1,0 +1,88 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: lib3ds_dll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Xianshun\LOCALS~1\Temp\RSP400.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I ".." /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "_LIB3DS_DLL" /Fo"Build\Release\dll/" /Fd"Build\Release\dll/" /FD /c 
+"C:\lib3ds-1.2.0\lib3ds\atmosphere.c"
+"C:\lib3ds-1.2.0\lib3ds\background.c"
+"C:\lib3ds-1.2.0\lib3ds\camera.c"
+"C:\lib3ds-1.2.0\lib3ds\chunk.c"
+"C:\lib3ds-1.2.0\lib3ds\ease.c"
+"C:\lib3ds-1.2.0\lib3ds\file.c"
+"C:\lib3ds-1.2.0\lib3ds\float.c"
+"C:\lib3ds-1.2.0\lib3ds\io.c"
+"C:\lib3ds-1.2.0\lib3ds\light.c"
+"C:\lib3ds-1.2.0\lib3ds\material.c"
+"C:\lib3ds-1.2.0\lib3ds\matrix.c"
+"C:\lib3ds-1.2.0\lib3ds\mesh.c"
+"C:\lib3ds-1.2.0\lib3ds\node.c"
+"C:\lib3ds-1.2.0\lib3ds\quat.c"
+"C:\lib3ds-1.2.0\lib3ds\shadow.c"
+"C:\lib3ds-1.2.0\lib3ds\tcb.c"
+"C:\lib3ds-1.2.0\lib3ds\tracks.c"
+"C:\lib3ds-1.2.0\lib3ds\vector.c"
+"C:\lib3ds-1.2.0\lib3ds\viewport.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Xianshun\LOCALS~1\Temp\RSP400.tmp" 
+Creating temporary file "C:\DOCUME~1\Xianshun\LOCALS~1\Temp\RSP401.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /pdb:none /machine:I386 /out:"Build\Release/lib3ds-120.dll" /implib:"Build\Release/lib3ds-120.lib" 
+".\Build\Release\dll\atmosphere.obj"
+".\Build\Release\dll\background.obj"
+".\Build\Release\dll\camera.obj"
+".\Build\Release\dll\chunk.obj"
+".\Build\Release\dll\ease.obj"
+".\Build\Release\dll\file.obj"
+".\Build\Release\dll\float.obj"
+".\Build\Release\dll\io.obj"
+".\Build\Release\dll\light.obj"
+".\Build\Release\dll\material.obj"
+".\Build\Release\dll\matrix.obj"
+".\Build\Release\dll\mesh.obj"
+".\Build\Release\dll\node.obj"
+".\Build\Release\dll\quat.obj"
+".\Build\Release\dll\shadow.obj"
+".\Build\Release\dll\tcb.obj"
+".\Build\Release\dll\tracks.obj"
+".\Build\Release\dll\vector.obj"
+".\Build\Release\dll\viewport.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\Xianshun\LOCALS~1\Temp\RSP401.tmp"
+<h3>Output Window</h3>
+Compiling...
+atmosphere.c
+background.c
+camera.c
+chunk.c
+ease.c
+file.c
+float.c
+io.c
+light.c
+material.c
+matrix.c
+mesh.c
+node.c
+quat.c
+shadow.c
+tcb.c
+tracks.c
+vector.c
+viewport.c
+Generating Code...
+Linking...
+   Creating library Build\Release/lib3ds-120.lib and object Build\Release/lib3ds-120.exp
+
+
+
+<h3>Results</h3>
+lib3ds-120.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

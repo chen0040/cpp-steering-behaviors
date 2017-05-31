@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 3ds2m - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Xianshun\LOCALS~1\Temp\RSP3F9.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I ".." /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fo"Build\Release\2m/" /Fd"Build\Release\2m/" /FD /c 
+"C:\lib3ds-1.2.0\tools\3ds2m.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Xianshun\LOCALS~1\Temp\RSP3F9.tmp" 
+Creating temporary file "C:\DOCUME~1\Xianshun\LOCALS~1\Temp\RSP3FA.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Build\Release/3ds2m.pdb" /machine:I386 /out:"Build\Release/3ds2m.exe" 
+".\Build\Release\2m\3ds2m.obj"
+".\Build\Release\lib3ds-120s.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\Xianshun\LOCALS~1\Temp\RSP3FA.tmp"
+<h3>Output Window</h3>
+Compiling...
+3ds2m.c
+Linking...
+
+
+
+<h3>Results</h3>
+3ds2m.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

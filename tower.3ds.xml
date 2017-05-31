@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<model>
+
+<transformations>
+<scale x="0.01" y="0.01" z="0.01" />
+<!--
+<translate x="0" y="0" z="0" />
+
+-->
+<rotation angle_in_degree="-90" x="1" y="0" z="0" />
+</transformations>
+
+<texture src="GenericMech.tga" enabled="true" alpha_blend="false" />
+
+<height_to_width_ratio value="1" />
+</model>

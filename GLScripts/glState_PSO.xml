@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<glState>
+
+<parameters>
+<param name="PSOAgent_Model" high_end_value="" low_end_value="" />
+<param name="iPSOAgentCount" high_end_value="64" low_end_value="32" />
+</parameters>
+
+</glState>

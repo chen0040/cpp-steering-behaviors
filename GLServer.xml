@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<server_config>
+
+<parameters>
+<param name="port_number" value="2000" />
+<param name="max_wait_ticks" value="10" />
+</parameters>
+
+<configuration type="TCP">
+<server_type name="TCP" />
+<server_type name="UDP" />
+</configuration>
+
+<UDPServer client_ip="localhost" port_number="2001" />
+
+</server_config>

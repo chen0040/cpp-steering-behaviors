@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<settings mode="window" showFPS="true" showAuthor="true" console_print="false" high_end_system="true" >
+<mode name="fullscreen" fullscreen="true">
+<resolution width="1280" height="800" />
+</mode>
+<mode name="window" fullscreen="false">
+<resolution width="800" height="600" />
+</mode>
+<mode name="Intellysis_fullscreen" fullscreen="true">
+<resolution width="1680" height="1050" />
+</mode>
+<mode name="Intellysis_window" fullscreen="false">
+<resolution width="1280" height="800" />
+</mode>
+</settings>
