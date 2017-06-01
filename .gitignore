@@ -2,6 +2,8 @@ Debug/
 Release/
 /.vs/
 
+log.txt
+
 # Prerequisites
 *.d
 
